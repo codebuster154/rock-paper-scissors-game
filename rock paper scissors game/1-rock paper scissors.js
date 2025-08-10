@@ -7,6 +7,8 @@ let computerMove = '';
     function change() {
       score.wins = score.loss = score.tie = 0;
       localStorage.removeItem('score');
+      document.querySelector('.p1').innerHTML = 'Start Game';
+      document.querySelector('.js-moves').innerHTML = '';  
       document.querySelector('.p2').innerHTML = `wins: ${score.wins}, Losses: ${score.loss}, Ties: ${score.tie}`;
       alert(`The result has been reset to 0`);
     }
@@ -53,3 +55,4 @@ let computerMove = '';
         Computer`;
 
     }
+
