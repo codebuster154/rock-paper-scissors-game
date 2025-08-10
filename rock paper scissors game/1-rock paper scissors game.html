@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>functions:rock paper scissors</title>
+  <link rel="stylesheet" href="1-rock paper scissors.css"> 
+</head>
+<body>
+  <p class="title">Rock paper scissors</p>
+  <div>
+    <button onclick="playGame('rock');" class="rps-but">
+      <img src="rock-emoji.png" alt="rock-img" class="images">
+    </button>
+    <button onclick="playGame('paper');" class="rps-but">
+      <img src="paper-emoji.png" alt="paper-img" class="images">
+    </button>
+    <button onclick="playGame('scissors');" class="rps-but">
+      <img src="scissors-emoji.png" alt="scissors-img" class="images">
+    </button>
+  </div>
+
+  <p class="p1">start game</p>
+  <p class="js-moves"></p>
+  <p class="p2">wins: 0, Losses: 0, Ties: 0</p>
+  <button onclick="change();" class="rst">
+    <img src="17429153.png" class="py-ag-img">
+  </button>
+
+  <script src="1-rock paper scissors.js"></script>
+</body>
+</html>
