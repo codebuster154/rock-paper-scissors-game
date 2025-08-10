@@ -48,7 +48,8 @@ let computerMove = '';
       localStorage.setItem('score', JSON.stringify(score));
       document.querySelector('.p2').innerHTML = `wins: ${score.wins}, Losses: ${score.loss}, Ties: ${score.tie}`;
       document.querySelector('.js-moves').innerHTML = `you 
-        <img src="images/${res}-emoji.png" class="move-img">
-        <img src="images/${computerMove}-emoji.png" class="move-img">
+        <img src="${res}-emoji.png" class="move-img">
+        <img src="${computerMove}-emoji.png" class="move-img">
         Computer`;
+
     }
